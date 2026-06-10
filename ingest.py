@@ -38,11 +38,11 @@ def process_and_store_pdf(file_path: str):
         persist_directory="./chroma_db_storage"
     )
     
-    print("Success! Your company manual is fully indexed and saved locally.")
+    print("Success! company manual is fully indexed and saved locally.")
 
 if __name__ == "__main__":
     TARGET_FILE = "company_manual.pdf"
     if os.path.exists(TARGET_FILE):
         process_and_store_pdf(TARGET_FILE)
     else:
-        print(f" Error: Please place your file named '{TARGET_FILE}' inside this folder first!")
+        print(f" Error: Please upload a file named '{TARGET_FILE}' inside this folder first!")
