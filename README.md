@@ -20,14 +20,14 @@ Response Delivery → The answer is returned to FastAPI and displayed in the Str
  ┌──────────────────────────────────────────┐
  │           Streamlit Frontend              │
  │      User Interface & Response Display    │
- │       (Runs on http://localhost:8501)     │
+ │       #(Runs on http://localhost:8501)     │
  └───────────────────┬──────────────────────┘
                      │ HTTP POST Request
                      ▼
  ┌──────────────────────────────────────────┐
  │             FastAPI Backend               │
  │       API Layer & RAG Processing          │
- │       (Runs on http://localhost:8000)     │
+ │       #(Runs on http://localhost:8000)     │
  └───────────────────┬──────────────────────┘
                      │
                      │ Semantic Similarity Search
